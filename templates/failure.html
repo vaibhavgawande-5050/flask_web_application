@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam Result</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        h1 {
+            color: #F44336;
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .score {
+            font-size: 42px;
+            font-weight: 700;
+            color: #F44336;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        li {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .subject {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .highlight {
+            color: #F44336;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Better Luck Next Time!</h1>
+        <p>You have failed the exam.</p>
+        <p>Name: <span class="highlight">{{ name }}</span></p>
+        <p>Roll Number: <span class="highlight">{{ roll_no }}</span></p>
+        <p>Rank: <span class="highlight">{{ rank }}</span></p>
+        <p>Your average score is:</p>
+        <p class="score">{{ score }}%</p>
+        <p>Subject-wise scores:</p>
+        <ul>
+            <li><span class="subject">Physics:</span> {{ physics }}</li>
+            <li><span class="subject">Chemistry:</span> {{ chemistry }}</li>
+            <li><span class="subject">Biology:</span> {{ biology }}</li>
+            <li><span class="subject">Math:</span> {{ math }}</li>
+        </ul>
+        <p class="motivational">"Single sheet of paper cant decide your future."- Vaibhav Gawande </p>
+    </div>
+</body>
+</html>
